@@ -14,12 +14,14 @@
 		practica MayorOMenor = new practica();
 		practica Promedio = new practica();
 		practica bisiesto = new practica();
+		practica velocidad = new practica();
 		
 		System.out.println("OPCION 1: Determina número par o impar.");
 		System.out.println("OPCIÓN 2: Determinar divisibilidad por 5.");
 		System.out.println("OPCIÓN 3: Determina si es año bisiesto.");
 		System.out.println("OPCIÓN 4: Determinar promedio de dos numeros.");
 		System.out.println("OPCIÓN 5: Determina número mayor y menor.");
+		System.out.println("OPCIÓN 6: Determina velociadad actual.");
 		
 		int z = Integer.parseInt(br.readLine());
 		switch (z){
@@ -47,8 +49,19 @@
 			System.out.println("ingrese segundo número.");
 			int b = Integer.parseInt(br.readLine());
 			System.out.println(MayorOMenor.MayorOMenor(a, b));break;
+		
+		case 6: 
+			System.out.println("Ingrese velocidad Inicial");
+			float v1 = new Float(br.readLine());
+			System.out.println("Ingrese velocidad Final");
+			float v2 = new Float(br.readLine());
+			System.out.println("Ingrese tiempo inicial");
+			float t1 = new Float(br.readLine());
+			System.out.println("Ingrese tiempo final");
+			float t2 = new Float(br.readLine());
+			System.out.println(velocidad.velocidad(v1, v2, t1, t2));break;
 			
-		default: System.out.println("ERROR coño"); break;
+		default: System.out.println("Opción Invalida"); break;
 	
       
 		}
