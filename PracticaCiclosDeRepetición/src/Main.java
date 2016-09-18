@@ -6,7 +6,7 @@
 
 	
 	public static void main(String[] args)throws Exception  {
-		// TODO Auto-generated method stub
+		
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		practica ParOImpar = new practica();
@@ -24,24 +24,29 @@
 		System.out.println("OPCIÓN 6: Determina velociadad actual.");
 		
 		int z = Integer.parseInt(br.readLine());
+		
 		switch (z){
-		case 1: System.out.println("Ingrese número");
-		int x = Integer.parseInt(br.readLine());
-		System.out.println("El numero " +x + " es " +ParOImpar.TipoDeNumero(x)+"\n" );break;
+		case 1: 
+			System.out.println("Ingrese número");
+			int x = Integer.parseInt(br.readLine());
+			System.out.println("El numero " +x + " es " +ParOImpar.TipoDeNumero(x)+"\n" );break;
 		
-		case 2: System.out.println("Ingrese un Númerillo");
-		int y = Integer.parseInt(br.readLine());
-		System.out.println("El numerillo " + y +  divisible.divisible(y)); break;
+		case 2: 
+			System.out.println("Ingrese un Númerillo");
+			int y = Integer.parseInt(br.readLine());
+			System.out.println("El numerillo " + y +  divisible.divisible(y)); break;
 		
-		case 3: System.out.println("Ingrese un año");
-		int año = Integer.parseInt(br.readLine());
-		System.out.println(bisiesto.Año(año));break;
+		case 3: 
+			System.out.println("Ingrese un año");
+			int año = Integer.parseInt(br.readLine());
+			System.out.println(bisiesto.Año(año));break;
 		
-		case 4: System.out.println("Ingrese primer número.");
-		double i = new Double(br.readLine());
-		System.out.println("Ingrese segundo número.");
-		double j = new Double(br.readLine());
-		System.out.printf("El promedio de "+ i+" y "+ j+" es: "+Promedio.Promedio(i, j));break;
+		case 4: 
+			System.out.println("Ingrese primer número.");
+			double i = new Double(br.readLine());
+			System.out.println("Ingrese segundo número.");
+			double j = new Double(br.readLine());
+			System.out.printf("El promedio de "+ i+" y "+ j+" es: "+Promedio.Promedio(i, j));break;
 		
 		case 5:
 			System.out.println("ingrese primer número.");
@@ -62,8 +67,6 @@
 			System.out.println(velocidad.velocidad(v1, v2, t1, t2));break;
 			
 		default: System.out.println("Opción Invalida"); break;
-	
-      
 		}
 		
 		}
